@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/price-list.css">
+    <link rel="stylesheet" href="./css/map.css">
+    <title>TechDesk</title>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="header__container container">
+            <a class="logo__link" href="index.html">
+                <picture  class="header__logo">
+                    <source media="(max-width: 1024px)" srcset="img/logo_mob.png">
+                    <img src="img/logo.png" alt="">
+                </picture>
+            </a>    
+            <nav itemscope itemtype="http://schema.org/SiteNavigationElement" class="nav">
+                <ul class="nav__list">
+                    <li itemprop="name" class="nav__item"><a itemprop="url" href="index.html" class="nav__link">Главная</a></li>
+                    <li itemprop="name" class="nav__item"><a itemprop="url" href="price-list.html" class="nav__link">Прайс-лист</a></li>
+                    <li itemprop="name" class="nav__item"><a itemprop="url" href="request.html" class="nav__link">Выезд мастера</a></li>
+                    <li itemprop="name" class="nav__item"><a itemprop="url" href="#" class="nav__link">Контакты</a></li>
+                </ul>
+                <button class="btn header__btn">Обратный звонок</button>
+            </nav>
+            
+            <div class="burger">
+                <div class="burger__up"></div><div class="burger__up"></div>
+                <span></span>
+                <div class="burger__down"></div><div class="burger__down"></div>
+            </div>
+        </div>
+    </header>
+    <div class="overflow">
+      
+    </div>
+    <div class="overflow__content">
+        <p class="close">Закрыть  x</p>
+        <p class="overflow__text">Оставьте заявку и мы свяжемся <br> с вами в ближайшее время! <br> Спасибо что вы с нами!</p>
+        <form class="overflow__form" action="" method="post">
+            <input class="overflow__input" type="text" placeholder="ВАШЕ ИМЯ">
+            <input class="overflow__input" type="text" placeholder="+7(999)999-00-00">
+            <button class="btn overflow__btn" type="submit">ОТПРАВИТЬ</button>
+            <p class="overflow__polit">Отправляя заявку вы соглашаетесь с <br> политикой конфиденциальности</p>
+        </form>
+        <p class="overflow__span">Если звонок не поступил в течении 5 минут, оставьте <br> заявку повторно или позвоните:  <a class="overflow__tel" href="tel::89999990000"></a>8(999)999-00-00</p>
+        <img class="overflow__img" src="img/cat.png" alt="">
+        <img class="overflow__decor" src="img/Subtract.png" alt="">
+    </div>
+    <main class="main">
+        <div class="map">
+            <div class="map__container container">
+                <ul itemscope itemtype="http://schema.org/ItemList">
+                    <li itemprop="itemListElement" class="map__item"><a itemprop="url" class="map__link" href="index.html">ГЛАВНАЯ</a>
+                        <ul >
+                            <li itemprop="itemListElement" class="map__item"><a itemprop="url" class="map__link" href="#">Почему выбирают нас</a></li>
+                        </ul>
+                    </li>
+                    <li itemprop="itemListElement" class="map__item"><a itemprop="url" class="map__link" href="price-list.html">Прайс-лист</a>
+                        
+                        <ul >
+                            <li itemprop="itemListElement" class="map__item"><a itemprop="url" class="map__link" href="#">РЕМОНТ APple</a>
+                                <ul >
+                                    <li itemprop="itemListElement" class="map__item"><a itemprop="url" class="map__link" href="#">IPHONE 12 pro</a></li>
+                                    <li itemprop="itemListElement" class="map__item"><a itemprop="url" class="map__link" href="#">iphone 12</a></li>
+                                    <li itemprop="itemListElement" class="map__item"><a itemprop="url" class="map__link" href="#">iphone 12 mini</a></li>
+                                </ul>
+                            </li>
+                            <li itemprop="itemListElement" class="map__item"><a itemprop="url" class="map__link" href="#">Ремонт samsung</a></li>
+                            <li itemprop="itemListElement" class="map__item"><a itemprop="url" class="map__link" href="#">Ремонт ноутбуков</a></li>
+                            <li itemprop="itemListElement" class="map__item"><a itemprop="url" class="map__link" href="#">Ремонт планшетов</a></li>
+                            <li itemprop="itemListElement" class="map__item"><a itemprop="url" class="map__link" href="#">ремонт PLAYStation</a></li>
+                        </ul>
+                    </li>
+                    <li itemprop="itemListElement" class="map__item"><a itemprop="url" class="map__link" href="request.html">Выезд мастера</a></li>
+                    <li itemprop="itemListElement" class="map__item"><a itemprop="url" class="map__link" href="#">Контакты</a></li>    
+                </ul>
+                <img class="map__img" src="img/Subtract.png" alt="#">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__container container">
+                <div class="footer__blcok">
+                    <ul itemscope itemtype="http://schema.org/SiteNavigationElement" class="footer__list">
+                        <li itemprop="name" class="footer__item"><a itemprop="url" href="#" class="footer__link">Ремонт телефонов</a></li>
+                        <li itemprop="name" class="footer__item"><a itemprop="url" href="#" class="footer__link">Ремонт Apple</a></li>
+                        <li itemprop="name" class="footer__item"><a itemprop="url" href="#" class="footer__link">Ремонт Samsung</a></li>
+                        <li itemprop="name" class="footer__item"><a itemprop="url" href="#" class="footer__link">Ремонт планшетов</a></li>
+                        <li itemprop="name" class="footer__item"><a itemprop="url" href="#" class="footer__link">Ремонт ноутбуков</a></li>
+                    </ul>
+                    <ul itemscope itemtype="http://schema.org/SiteNavigationElement" class="footer__list footer__nav">
+                        <li itemprop="name" class="footer__item"><a itemprop="url" href="#" class="footer__link">Контакты</a></li>
+                        <li itemprop="name" class="footer__item"><a itemprop="url" href="request.html" class="footer__link">Выезд мастера</a></li>
+                        <li itemprop="name" class="footer__item"><a itemprop="url" href="price-list.html" class="footer__link">Прайс-лист</a></li>
+                        <li itemprop="name" class="footer__item"><a itemprop="url" href="map.html" class="footer__link">Карта сайта</a></li>
+                    </ul>
+                </div>
+               
+                <div class="footer__content">
+                    <a class="footer__tel" href="">8 (800) 999-99-99</a>
+                    <button class="btn footer__btn">ОБРАТНЫЙ ЗВОНОК</button>
+                </div>
+                <div class="up">
+                    <img class="up__img" src="img/decor.png" alt="">
+                    <p class="up__text">ВВЕРХ</p>
+                </div>
+            </div>
+        </div>
+      
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
