@@ -29,6 +29,15 @@ button {
     cursor: pointer;
 }
 
+img{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    user-drag: none;
+    -webkit-user-drag: none;
+}
+
 .body.active{
     overflow: hidden;
 }
@@ -381,11 +390,13 @@ button {
     fill: #000;
 }
 
-.swiper-slide-active{
-    
+.swiper-slide-active {
     transform: scale(1.2) !important;
 }
 
+.swiper .swiper-slide{
+    transform-origin: center  !important; 
+}
 .swiper-button-prev{
     left: -115px !important;
 }
@@ -1203,7 +1214,7 @@ button {
     }
 
     .swiper-slide-active{
-    
+      
         transform: scale(0.844) !important;
     }
 
@@ -1214,7 +1225,9 @@ button {
     .swiper-slide{
         padding: 0;
     }
-
+    .swiper .swiper-slide{
+        overflow: visible !important;
+    }
 
     .swiper-button-prev{
         left: -28px !important;
@@ -1490,10 +1503,10 @@ button {
         font-size: 24px;
     }
 
-
+    
 
     .swiper-slide-active{
-    
+   
         transform: scale(0.644) !important;
     }
 
