@@ -36,7 +36,6 @@ let mores = document.querySelectorAll(".models__more")
 let modelsRows = document.querySelectorAll(".models__table")
 let overflowImg = document.querySelector(".overflow__img")
 
-
 overflowClose.addEventListener("click", ()=>{
   overflowContent.style.display= "none"
   overflow.style.display= "none"
@@ -74,6 +73,7 @@ up.addEventListener("click", ()=>{
     behavior: "smooth"
   })
 })
+
 
 burger.addEventListener("click", ()=>{
   burger.classList.toggle("active")

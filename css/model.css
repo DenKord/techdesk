@@ -49,6 +49,7 @@
 }
 
 
+
 @media (max-width: 1024px){
     .devices__blcok:nth-child(1n+3){
         display: none;
@@ -78,8 +79,12 @@
         flex-direction: column-reverse;
     }
 
+    .model__block{
+        width: 100%;
+    }
+
     .model__list{
-        width: 400px;
+        width: 100%;
         padding-top: 20px;
     }
 
@@ -97,15 +102,13 @@
     }
 
     .model__list{
-        width: 290px;
+        width: 100%;
     }
 
-    .model__offer{
-        font-size: 13px;
-    }
-
+    .model__offer,
     .model__price{
-        font-size: 14px;
+        font-size: 16px;
+        text-wrap: nowrap;
     }
 
     .model__img{
@@ -114,5 +117,14 @@
 
     .model{
         padding-bottom: 60px;
+    }
+
+}
+
+
+@media (max-width: 340px){
+    .model__offer,
+    .model__price{
+        font-size: 14px;
     }
 }

@@ -25,7 +25,7 @@
                     <li itemprop="name" class="nav__item"><a itemprop="url" href="index.html" class="nav__link">Главная</a></li>
                     <li itemprop="name" class="nav__item"><a itemprop="url" href="price-list.html" class="nav__link">Прайс-лист</a></li>
                     <li itemprop="name" class="nav__item"><a itemprop="url" href="request.html" class="nav__link">Выезд мастера</a></li>
-                    <li itemprop="name" class="nav__item"><a itemprop="url" href="#" class="nav__link">Контакты</a></li>
+                    <li itemprop="name" class="nav__item"><a itemprop="url" href="#" class="nav__link nav__link-contacts">Контакты</a></li>
                 </ul>
                 <button class="btn header__btn">Обратный звонок</button>
             </nav>
@@ -221,9 +221,9 @@
                     <div itemscope itemtype="http://schema.org/Organization" class="contacts__block contacts__block-info">
                         <meta itemprop="name"  content="TachDesk" />
                         <ul itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"  class="contacts__list">
-                            <li itemprop="streetAddress"  class="contacts__item contacts__item-map"><a class="contacts__link"  href="https://maps.app.goo.gl/RwoMLnkEAX6hCG9u5"><img class="contacts__item-img" src="img/map.png" alt="map">Комсомольская площадь, дом 6</a></li>
-                            <li itemprop="telephone" class="contacts__item contacts__item-tel"><a class="contacts__link" href="tel:88009999999"><img class="contacts__item-img" src="img/tel.png" alt="tel">8 (800) 999-99-99</a></li>
-                            <li itemprop="email" class="contacts__item contacts__item-mail"><a class="contacts__link"  href="mailto:info@techdesk.site"><img class="contacts__item-img" src="img/mail.png" alt="mail">info@techdesk.site</a></li>
+                            <li itemprop="streetAddress"  class="contacts__item contacts__item-map"><a class="contacts__link"  href="https://maps.app.goo.gl/RwoMLnkEAX6hCG9u5"><img class="contacts__item-img" src="img/map.png" alt="map"><span class="contacts__span">Комсомольская площадь, дом 6</span></a></li>
+                            <li itemprop="telephone" class="contacts__item contacts__item-tel"><a class="contacts__link" href="tel:88009999999"><img class="contacts__item-img" src="img/tel.png" alt="tel"><span class="contacts__span">8 (800) 999-99-99</span></a></li>
+                            <li itemprop="email" class="contacts__item contacts__item-mail"><a class="contacts__link"  href="mailto:info@techdesk.site"><img class="contacts__item-img" src="img/mail.png" alt="mail"><span class="contacts__span">info@techdesk.site</span></a></li>
                         </ul>
                         <div class="wrapper__contacts-btns">
                             <div class="contacts__btns">
@@ -234,7 +234,7 @@
                         </div>
                     </div>
                     <div class="contacts__block contacts__block-map">
-                        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.988550940834!2d37.657645377182845!3d55.7760706901983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a7f21f61ee1%3A0xc55e4063b9da5b11!2z0JrQvtC80YHQvtC80L7Qu9GM0YHQutCw0Y8g0L_Quy4sIDYsINCc0L7RgdC60LLQsCwgMTA3MTQw!5e0!3m2!1sru!2sru!4v1721904200318!5m2!1sru!2sru" width="520" height="520" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe class="contacts__map"  src="https://yandex.ru/map-widget/v1/?um=constructor%3A6d83f07152c82fb7efe94fdce43a708e6ea4fc81b67ff04d2aa871af11a04902&amp;source=constructor" width="520" height="450" frameborder="0"></iframe>
                         <img class="contacts__decor" src="img/TECHDESK.png" alt="">
                     </div>
                 </div>
@@ -276,5 +276,18 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        let contactsLink = document.querySelector(".nav__link-contacts")
+        let contactsBlcok = document.querySelector(".contacts")
+        
+        contactsLink.addEventListener("click", ()=>{
+            window.scroll({
+                left:0,
+                top: contactsBlcok.offsetTop,
+                behavior: "smooth"
+            })
+        })
+
+    </script>
 </body>
 </html>
