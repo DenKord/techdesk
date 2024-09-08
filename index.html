@@ -6,9 +6,9 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/main.css">
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title itemprop="name">TechDesk</title>
 </head>
 <body class="body">
@@ -25,7 +25,7 @@
                     <li itemprop="name" class="nav__item"><a itemprop="url" href="index.html" class="nav__link">Главная</a></li>
                     <li itemprop="name" class="nav__item"><a itemprop="url" href="price-list.html" class="nav__link">Прайс-лист</a></li>
                     <li itemprop="name" class="nav__item"><a itemprop="url" href="request.html" class="nav__link">Выезд мастера</a></li>
-                    <li itemprop="name" class="nav__item"><a itemprop="url" href="#" class="nav__link nav__link-contacts">Контакты</a></li>
+                    <li itemprop="name" class="nav__item"><a itemprop="url" href="#contact" class="nav__link nav__link-contacts">Контакты</a></li>
                 </ul>
                 <button class="btn header__btn">Обратный звонок</button>
             </nav>
@@ -44,11 +44,17 @@
         <p class="close">Закрыть  x</p>
         <p class="overflow__text">Оставьте заявку и мы свяжемся <br> с вами в ближайшее время! <br> Спасибо что вы с нами!</p>
         <form class="overflow__form" action="" method="post">
-            <input class="overflow__input" type="text" placeholder="ВАШЕ ИМЯ">
-            <input class="overflow__input" type="text" placeholder="+7(999)999-00-00">
+            <input class="overflow__input" type="text" pattern="[А-Яа-я]"  required placeholder="ВАШЕ ИМЯ">
+            <input class="overflow__input tel" type="text" placeholder="+7(999)999-00-00">
             <button class="btn overflow__btn" type="submit">ОТПРАВИТЬ</button>
             <p class="overflow__polit">Отправляя заявку вы соглашаетесь с <br> политикой конфиденциальности</p>
         </form>
+
+        <img class="overflow__decor" src="img/Subtract.png" alt="">
+    </div>
+    <div class="overflow__content overflow__content-two">
+        <p class="close">Закрыть  x</p>
+        <h2 class="overflow__title">Спасибо, что <br> выбираете нас!</h2>
         <p class="overflow__span">Если звонок не поступил в течении 5 минут, оставьте <br> заявку повторно или позвоните:  <a class="overflow__tel" href="tel::89999990000"></a>8(999)999-00-00</p>
         <img class="overflow__img" src="img/cat.png" alt="">
         <img class="overflow__decor" src="img/Subtract.png" alt="">
@@ -214,7 +220,7 @@
             </div>
                      
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contact">
             <div class="contacts__container container">
                 <h2 class="contacts__title title">Наши контакты</h2>
                 <div class="contacts__content">
