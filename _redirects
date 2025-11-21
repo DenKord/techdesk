@@ -1,0 +1,7 @@
+# Скрываем расширение .html
+# /about → /about.html
+/:page   /pages/:page.html   200
+/:page/  /pages/:page/index.html   200
+
+# Перенаправляем все остальные запросы в папку pages
+/*      /pages/:splat     200
