@@ -1,9 +1,13 @@
 # Главная страница → pages/index.html
-/     /pages/index.html    200
+/               /pages/index.html     200
 
-# Скрываем .html расширения
-/:page        /pages/:page.html      200
-/:page/       /pages/:page/index.html 200
+# Скрываем .html расширение
+# /about → /pages/about.html
+/:page         /pages/:page.html      200
 
-# Всё остальное — в /pages/
-/*           /pages/:splat          200
+# /about/ → /pages/about/index.html (если будут вложенные страницы)
+/:page/        /pages/:page/index.html   200
+
+# Всё остальное → /pages/
+# /something → /pages/something
+/*             /pages/:splat          200
