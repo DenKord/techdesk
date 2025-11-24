@@ -1,6 +1,6 @@
 [build]
   publish = "."     # или укажи другую папку, если Publish directory у тебя не корень
-
+#eee
 [[redirects]]
   from = "/"
   to = "/pages/index.html"
